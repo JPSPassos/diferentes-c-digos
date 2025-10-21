@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #ffffff;
+}
+
+.quadrante {
+    display: flex;
+    align-items: center;
+    gap: 30px;                 
+    padding: 30px;             
+    border-radius: 16px;       
+    background: #f3f3f3;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10); 
+    border: 1px solid rgba(0,0,0,0.06);
+    width: 800px;              
+    margin: 20px 0;            
+}
+
+
+.photo {
+    width: 220px;            
+    height: 220px;           
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid rgba(0,0,0,0.08); 
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.nome {
+    padding: 18px 28px;        
+    background: #ffffff;
+    border-radius: 12px;       
+    font-size: 2.8rem;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 360px;          
+    text-align: center;
+    line-height: 1.1;
+}
+
+
+@media (max-width: 900px) {
+    .quadrante {
+        width: 92%;
+        flex-direction: column;
+        gap: 18px;
+        padding: 22px;
+        align-items: center;
+    }
+    .photo {
+        width: 180px;
+        height: 180px;
+        flex: 0 0 180px;
+    }
+    .nome {
+        min-width: auto;
+        font-size: 2rem;
+        padding: 14px 18px;
+    }
+}
